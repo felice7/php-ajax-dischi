@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  background-color: #212121;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+.header {
+  background: #FFA000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.header_logo {
+  color: #212121;
+  float: left;
+  font-size: 60px;
+  padding: 25px;
+}
+
+.header_search {
+  padding: 25px;
+}
+
+.search_box {
+  float:right;
+  padding: 10px;
+  height: 60px;
+  border-radius: 40px;
+  background: #212121;
+}
+
+.search_box:hover > .search_text {
+  width: 240px;
+  transition: 0.2s;
+}
+.search_box:hover > .search_btn {
+  background: #fff;
+}
+
+.search_btn {
+  color: #212121;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background: #FFA000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.6s;
+}
+.search_text {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.container{
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.container-disco{
+  padding: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.copertina-album{
+  max-width: 250px;
+  transform-origin: center;
+  transform: perspective(800px) rotateY(30deg);
+  transition: 0.5s;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0004);
+}
+
+.titolo-album{
+  color: #FFC107;
+  font-size: 21px;
+  margin-top: 70px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.artista{
+  font-size: 20px;
+  color: #757575;
+  margin-bottom: 5px;
+}
+
+.anno{
+  font-size: 14px;
+  color: #607D8B;
+}
+
+.container:hover img {
+  opacity: 0.2;
+}
+
+.container img:hover{
+  transform: perspective(800px) rotateY(0deg);
+  opacity: 1;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
